@@ -22,3 +22,4 @@ print(Producto)
 
 ```
 4. Revisar que son los algoritmos de sorting, entender bubble-sort
+Bubble-sort es un algoritmo de clasificación el cual va reemplazando iterativamente elementos si están desordenados con el fin de ordenarlos de menor a mayor. Sin embargo, existe un problema y es que este algoritmo no es adecuado para grandes conjuntos de datos porque su complejidad temporal se vuelve alta a medida que la lista incremente sus elementos ya que utilizaria mas condicionales.
