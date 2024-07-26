@@ -33,7 +33,36 @@ print(Producto)
 
 
 ```python
+# Hacer un algoritmo que deje al final de un arreglo de números todos los ceros que aparezcan en dicho arreglo.
 
+# Inicializa un arreglo vacío para almacenar los números
+arreglo_numeros = []
+cantidad_arreglo = int(input("¿De cuantos numeros quiere el arreglo?:"))
+
+primer_numero = int(input("Ingrese su primer numero para el arreglo:"))
+arreglo_numeros.append(primer_numero)
+
+# Utiliza un bucle for para pedir al usuario los números intermedios
+for i in range(cantidad_arreglo - 2):
+    numeros = int(input("Ingrese el siguiente numero: "))
+    arreglo_numeros.append(numeros)
+ultimo_numero = int(input("Ingrese el ultimo numero para el arreglo:"))
+arreglo_numeros.append(ultimo_numero)
+
+# Imprime el arreglo de números original
+print("Su arreglo de numeros es:" + str(arreglo_numeros))
+
+# Recorre el arreglo de números
+for numero in arreglo_numeros:
+    # Si el número es 0, lo agrega al final del arreglo y lo elimina de su posición actual
+    if numero == 0:
+        arreglo_numeros.append(numero)
+        arreglo_numeros.remove(numero)
+    # Si el número no es 0, continúa con la siguiente iteración del bucle
+    else:
+        if numero != 0:
+            continue
+print("Su arreglo de numeros con los ceros al final del arreglo es:" + str(arreglo_numeros))
 ```
 4. Revisar que son los algoritmos de sorting, entender bubble-sort
 
