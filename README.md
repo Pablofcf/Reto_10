@@ -3,21 +3,20 @@
 1. Desarrollar un algoritmo que calcule el promedio de un arreglo de reales.
 
 ```python
-#Cree una lista donde los números sean representados por variables que el usuario digitara
-def promedio(a:float, b:float, c:float) -> float:
-    #Funcion para hacer el cálculo del promedio
-    prome = (a+b+c)/len(lista)
-    return prome
-
-
-if __name__=="__main__":
-    #le pedimos al usuario 3 números reales
-    a=float(input("Ingrese un número real: "))
-    b=float(input("Ingrese un 2do número real: "))
-    c=float(input("Ingrese un 3er número real: "))
-    #llamamos la función
-    dio=promedio(a,b,c)
-    print(f"El promedio de su arreglo de valores reales es de: {dio:.3f}")
+#Cree una lista vacia para almacenar los datos
+nums = []
+print("¿cuántos números ingersará?")
+n = int(input())
+i = 0
+#Cree un ciclo para que el usuario digite los números a ingresar
+while i < n:
+    print("valor número: ",i+1)
+    val = float(input())
+    nums.append(val)
+    i+=1
+#Cree una función para hallar el promedio de la lista
+prom = sum(nums) / len(nums)
+print( "El promedio es: ",prom)
 ```
 2. Desarrollar un algoritmo que calcule el producto punto de dos arreglos de números enteros (reales) de igual tamaño.
 ```python
